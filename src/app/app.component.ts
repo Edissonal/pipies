@@ -6,5 +6,32 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipes';
+
+  
+  nombre: string = 'Capitan America';
+  nombre2: string = 'eDIsson alOnsO';
+  arreglo = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  pi: number = Math.PI;
+  porcentaje: number = 0.234;
+  salario: number = 1234.5;
+  fecha: Date = new Date();
+  activar: boolean = true;
+  idioma: string = 'en';
+  videoURL = 'https://www.youtube.com/embed/5ib8Xh-Xk6M';
+
+  heroe={
+    nombre:'logan',
+    clave:'wolverine',
+    edad: 500,
+    direccion: {
+      calle: 'Primera',
+      casa:20
+    }
+    
+  }
+  valorPromesa = new Promise<String>((resolve) => {
+    setTimeout(() => {
+      resolve('llego la data');
+    },4500)
+  })
 }
